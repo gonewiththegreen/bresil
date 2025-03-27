@@ -1,0 +1,129 @@
+body{
+  background-color: #ffffff;
+  display:flex;
+  flex-wrap: wrap;
+  deviwidth:100%;
+  margin:1%;
+  
+}
+
+main{    /* ici on gère l'alignement horizontale des éléments*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px  0px 5px;;
+  font-family: calibri;
+  font-size: 2.5em;
+  
+}
+/* ici on gère l'aspect des liens dans le menu */
+a:link {
+  color: #fee100;
+  
+}
+
+a:visited {
+  color: #fee100;
+
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background:#13a230;
+}
+
+nav a:hover {
+  border-bottom: 1px solid;
+  background: #13a230;
+    ;
+}
+
+a:active {
+  border-bottom: 1px solid;
+  background: #fee100;
+  color:#13a230;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.5em;
+  margin-bottom: 2px;
+}
+nav{
+ 
+   border: 0.2rem solid;
+   border-radius: 50px;
+   text-align:left;
+   border-color:  #13a230;
+   background:#001c78;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul{
+  list-style-type: none;
+}
+.sous{
+    display: none;
+   
+    
+}
+
+nav > ul li:hover .sous{
+    display: block;
+	
+}
+nav ul ul li a{
+	font-size:5em;
+}
+
+   
+
+
+/* contenant en largeur */
+section{
+	width:16%;
+	background:#001c78;
+	margin-left: 8%;	
+	margin-top:1%;
+    border: 0.2rem solid;
+    border-radius: 50px;
+    text-align:left;
+    border-color: #13a230;
+	text-align:center;
+	color:#ffffff;
+}
+article {
+  padding :5px;
+  width :48% ;
+  
+  margin-right:2%; 
+  margin-left:2%; 
+
+}
+.titre{
+  vertical-align: top;
+  background-color:#13a230 ;
+  font-size: 2em;
+  color: #fee100;
+  text-align:center;
+}
+aside{
+  width:16%;
+  margin-right: 8%;
+  margin-top:1%;
+}
+footer {
+	margin-top:7%;
+	
+}
+footer img {
+     width:100%;
+}
